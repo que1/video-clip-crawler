@@ -37,5 +37,5 @@ if __name__ == '__main__':
     local_file_path = "/Users/q/doc/video_clip/"
 
     print("[{0}] -------------start-------------".format(get_current_time()))
-    download_video(channel_url, local_file_path)
+    #download_video(channel_url, local_file_path)
     print("[{0}] ------------- end -------------".format(get_current_time()))
