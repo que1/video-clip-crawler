@@ -20,17 +20,17 @@ def download_video(channel_url, local_file_path):
     print("[{0}] ------------- parse video list end -------------".format(format_date.get_current_time()))
 
     index = 1
-    for video_url in video_list[5:]:
+    for video_url in video_list:
         print("[{0}] -------------begin download: {1}-------------".format(format_date.get_current_time(), index))
         youtube_video_download.download_video_without_exception(video_url, local_file_path)
         print("[{0}] ------------- download end: {1} -------------".format(format_date.get_current_time(), index))
         index += 1
-        time.sleep(60 * 3)
+        time.sleep(60 * 2)
 
 
 if __name__ == '__main__':
-    channel_url = "https://www.youtube.com/channel/UCFE3JBjfUZcTAqG14roaAFw/videos"
-    local_file_path = "/Users/q/doc/video_clip/"
+    channel_url = "https://www.youtube.com/channel/UCr4ZqhqR6cGVSpxN59gLaZQ/videos"
+    local_file_path = "F:\\vide_clip_downloads\\"
 
     print("[{0}] -------------start-------------".format(format_date.get_current_time()))
     download_video(channel_url, local_file_path)
