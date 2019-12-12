@@ -112,4 +112,7 @@ if __name__ == '__main__':
     text = get_html_text(channel_url)
     json_str = get_yt_initial_data_json(text)
     video_list = parse_yt_initial_data_json(json_str)
-    print(video_list)
+    index = 1
+    for video_url in video_list:
+        print("[{0}] {1}".format(index, video_url))
+        index += 1
