@@ -17,7 +17,7 @@ def download_video(channel_url, local_file_path):
     for video_url in video_list:
         print("[{0}] {1}".format(index, video_url))
         index += 1
-    print("[{1}] ------------- parse video list end -------------".format(get_current_time()))
+    print("[{0}] ------------- parse video list end -------------".format(get_current_time()))
 
     index = 1
     for video_url in video_list:
